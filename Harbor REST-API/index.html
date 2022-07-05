@@ -1,0 +1,31 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Login/register for an API JWT</title>
+  </head>
+  <body>
+    <h1>Oauth and API testing with JWTs by Daniel Facchiano for CS 493</h1>
+    <h2>Weclome Page:</h2>
+    <p> Enter a username and password to login/registar. You will receive a JWT allowing you to use the api hosted at:</p>
+    
+    <label for="username1">Email:</label>
+    <input type="text" id="username1" name="username1"><br><br>
+    <label for="password1">Password:</label>
+    <input type="password" id="password1" name="password1"><br><br>
+    
+    <input type="submit" value="Login/Register" onclick="submit()">
+
+    <script type="text/javascript">
+        function submit() {
+            let uname = document.getElementById("username1").value;
+            let pword = document.getElementById("password1").value;
+            console.log(uname);
+            console.log(pword);
+
+            //var url = "https://even-trainer-349422.wn.r.appspot.com"
+            //url = url + "/redirector"
+            //window.location = url;
+        }
+  </script>
+  </body>
+</html>
